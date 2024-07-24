@@ -93,7 +93,7 @@ const oauth = async (req, res) => {
         email: userInfo.email,
         name: userInfo.name,
         picture: userInfo.picture,
-        googleId: userInfo.id,
+        googleId: userInfo.sub,
       })
 
       await user.save()
